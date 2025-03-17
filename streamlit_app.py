@@ -13,43 +13,43 @@ def main():
   st.title('Dermatology Machine Learning')
   st.info('This app using machine learning')
 
-# input data by user
-erythema = st.slider('Erythema', min_value=0, max_value=3, value=2)
-scaling = st.slider('Scaling', min_value = 0, max_value = 3, value = 2)
+  # input data by user
+  erythema = st.slider('Erythema', min_value=0, max_value=3, value=2)
+  scaling = st.slider('Scaling', min_value = 0, max_value = 3, value = 2)
 
-definite_borders = st.slider('Definite Borders', min_value = 0, max_value = 3, value = 2)
+  definite_borders = st.slider('Definite Borders', min_value = 0, max_value = 3, value = 2)
 
-itching = st.slider('Itching', min_value = 0, max_value = 3, value = 0)
+  itching = st.slider('Itching', min_value = 0, max_value = 3, value = 0)
 
-koebner_phenomenon = st.slider('koebner_phenomenon', min_value = 0, max_value = 3, value = 0)
+  koebner_phenomenon = st.slider('koebner_phenomenon', min_value = 0, max_value = 3, value = 0)
 
-polygonal_papules = st.slider('Polygonal Papules', min_value = 0, max_value = 3, value = 0)
+  polygonal_papules = st.slider('Polygonal Papules', min_value = 0, max_value = 3, value = 0)
 
-follicular_papules = st.slider('Follicular Papules', min_value = 0, max_value = 3, value = 0)
+  follicular_papules = st.slider('Follicular Papules', min_value = 0, max_value = 3, value = 0)
 
-oral_mucosal_involvement = st.slider('Oral Mucosal Involvement', min_value = 0, max_value = 3, value = 0)
+  oral_mucosal_involvement = st.slider('Oral Mucosal Involvement', min_value = 0, max_value = 3, value = 0)
 
-knee_and_elbow_involvement = st.slider('Knee and Elbow Involvement', min_value = 0, max_value = 3, value = 0)
+  knee_and_elbow_involvement = st.slider('Knee and Elbow Involvement', min_value = 0, max_value = 3, value = 0)
 
-scalp_involvement = st.slider('Scalp Involvement', min_value = 0, max_value = 3, value = 0)
+  scalp_involvement = st.slider('Scalp Involvement', min_value = 0, max_value = 3, value = 0)
 
-family_history = st.slider('Family History', min_value = 0, max_value = 1, value = 0)
+  family_history = st.slider('Family History', min_value = 0, max_value = 1, value = 0)
 
-melanin_incontinence = st.slider('Melanin Incontinence', min_value = 0, max_value = 3, value = 0)
+  melanin_incontinence = st.slider('Melanin Incontinence', min_value = 0, max_value = 3, value = 0)
 
-eosinophils_infiltrate = st.slider('Eosinophils Infiltrate', min_value = 0, max_value = 2, value = 0)
+  eosinophils_infiltrate = st.slider('Eosinophils Infiltrate', min_value = 0, max_value = 2, value = 0)
 
-PNL_infiltrate = st.slider('PNL Infiltrate', min_value = 0, max_value = 3, value = 0)
+  PNL_infiltrate = st.slider('PNL Infiltrate', min_value = 0, max_value = 3, value = 0)
 
-fibrosis_papillary_dermis = st.slider('Fibrosis Papillary Dermis', min_value = 0, max_value = 3, value = 0)
+  fibrosis_papillary_dermis = st.slider('Fibrosis Papillary Dermis', min_value = 0, max_value = 3, value = 0)
 
-exocytosis = st.slider('Exocytosis', min_value = 0, max_value = 3, value = 2)
+  exocytosis = st.slider('Exocytosis', min_value = 0, max_value = 3, value = 2)
 
-acanthosis = st.slider('Acanthosis', min_value = 0, max_value = 3, value = 2)
+  acanthosis = st.slider('Acanthosis', min_value = 0, max_value = 3, value = 2)
 
-hyperkeratosis = st.slider('Hyperkeratosis', min_value = 0, max_value = 3, value = 0)
+  hyperkeratosis = st.slider('Hyperkeratosis', min_value = 0, max_value = 3, value = 0)
 
-parakeratosis = st.slider('Parakeratosis', min_value = 0, max_value = 3, value = 2)
+  parakeratosis = st.slider('Parakeratosis', min_value = 0, max_value = 3, value = 2)
 
 clubbing_rete_ridges = st.slider('Clubbing Rete Ridges', min_value = 0, max_value = 3, value = 0)
 
@@ -84,15 +84,15 @@ age = st.slider('age', min_value = 0, max_value = 75, value = 40)
 #Input data for program
 # Input Data for Program
 
-user_input = [erythema, scaling, definite_borders, itching, koebner_phenomenon, polygonal_papules, follicular_papules, oral_mucosal_involvement,
+  user_input = [erythema, scaling, definite_borders, itching, koebner_phenomenon, polygonal_papules, follicular_papules, oral_mucosal_involvement,
 
-knee_and_elbow_involvement, scalp_involvement, family_history, melanin_incontinence, eosinophils_infiltrate, PNL_infiltrate,
+  knee_and_elbow_involvement, scalp_involvement, family_history, melanin_incontinence, eosinophils_infiltrate, PNL_infiltrate,
+  
+  fibrosis_papillary_dermis, exocytosis, acanthosis, hyperkeratosis, parakeratosis, clubbing_rete_ridges, elongation_rete_ridges,
 
-fibrosis_papillary_dermis, exocytosis, acanthosis, hyperkeratosis, parakeratosis, clubbing_rete_ridges, elongation_rete_ridges,
+  thinning_suprapapillary_epidermis, spongiform_pustule, munro_microabcess, focal_hypergranulosis, disappearance_granular_layer,
 
-thinning_suprapapillary_epidermis, spongiform_pustule, munro_microabcess, focal_hypergranulosis, disappearance_granular_layer,
-
-vacuolisation_damage_basal_layer, spongiosis, saw_tooth_appearance_retes, follicular_horn_plug, perifollicular_parakeratosis,
+  vacuolisation_damage_basal_layer, spongiosis, saw_tooth_appearance_retes, follicular_horn_plug, perifollicular_parakeratosis,
 
 inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
 model_filename = 'trained_model.pkl'
