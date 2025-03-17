@@ -51,35 +51,35 @@ def main():
 
   parakeratosis = st.slider('Parakeratosis', min_value = 0, max_value = 3, value = 2)
 
-clubbing_rete_ridges = st.slider('Clubbing Rete Ridges', min_value = 0, max_value = 3, value = 0)
+  clubbing_rete_ridges = st.slider('Clubbing Rete Ridges', min_value = 0, max_value = 3, value = 0)
 
-elongation_rete_ridges = st.slider('Elongation Rete Ridges', min_value = 0, max_value = 3, value = 0)
+  elongation_rete_ridges = st.slider('Elongation Rete Ridges', min_value = 0, max_value = 3, value = 0)
 
-thinning_suprapapillary_epidermis = st.slider('Thinning Suprapapillary Epidermis', min_value = 0, max_value = 3, value = 0)
+  thinning_suprapapillary_epidermis = st.slider('Thinning Suprapapillary Epidermis', min_value = 0, max_value = 3, value = 0)
 
-spongiform_pustule = st.slider('Spongiform Pustule', min_value = 0, max_value = 3, value = 0)
+  spongiform_pustule = st.slider('Spongiform Pustule', min_value = 0, max_value = 3, value = 0)
 
-munro_microabcess = st.slider('Munro Microabcess', min_value = 0, max_value = 3, value = 0)
+  munro_microabcess = st.slider('Munro Microabcess', min_value = 0, max_value = 3, value = 0)
 
-focal_hypergranulosis = st.slider('Focal Hypergranulosis', min_value = 0, max_value = 3, value = 0)
+  focal_hypergranulosis = st.slider('Focal Hypergranulosis', min_value = 0, max_value = 3, value = 0)
 
-disappearance_granular_layer = st.slider('disappearance_granular_layer', min_value = 0, max_value = 3, value = 0)
+  disappearance_granular_layer = st.slider('disappearance_granular_layer', min_value = 0, max_value = 3, value = 0)
 
-vacuolisation_damage_basal_layer = st.slider('vacuolisation damage basal layer', min_value = 0, max_value = 3, value = 0)
+  vacuolisation_damage_basal_layer = st.slider('vacuolisation damage basal layer', min_value = 0, max_value = 3, value = 0)
 
-spongiosis = st.slider('Spongiosis', min_value = 0, max_value = 3, value = 0)
+  spongiosis = st.slider('Spongiosis', min_value = 0, max_value = 3, value = 0)
 
-saw_tooth_appearance_retes = st.slider('saw tooth appearance retes', min_value = 0, max_value = 3, value = 0)
+  saw_tooth_appearance_retes = st.slider('saw tooth appearance retes', min_value = 0, max_value = 3, value = 0)
 
-follicular_horn_plug = st.slider('follicular horn plug', min_value = 0, max_value = 3, value = 0)
+  follicular_horn_plug = st.slider('follicular horn plug', min_value = 0, max_value = 3, value = 0)
 
-perifollicular_parakeratosis = st.slider('perifollicular parakeratosis', min_value = 0, max_value = 3, value = 0)
+  perifollicular_parakeratosis = st.slider('perifollicular parakeratosis', min_value = 0, max_value = 3, value = 0)
 
-inflammatory_mononuclear_infiltrate = st.slider('inflammatory mononuclear infiltrate', min_value = 0, max_value = 3, value = 2)
+  inflammatory_mononuclear_infiltrate = st.slider('inflammatory mononuclear infiltrate', min_value = 0, max_value = 3, value = 2)
 
-band_like_infiltrate = st.slider('band like infiltrate', min_value = 0, max_value = 3, value = 0)
+  band_like_infiltrate = st.slider('band like infiltrate', min_value = 0, max_value = 3, value = 0)
 
-age = st.slider('age', min_value = 0, max_value = 75, value = 40)
+  age = st.slider('age', min_value = 0, max_value = 75, value = 40)
 
 #Input data for program
 # Input Data for Program
@@ -94,11 +94,11 @@ age = st.slider('age', min_value = 0, max_value = 75, value = 40)
 
   vacuolisation_damage_basal_layer, spongiosis, saw_tooth_appearance_retes, follicular_horn_plug, perifollicular_parakeratosis,
 
-inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
-model_filename = 'trained_model.pkl'
-model = load_model(model_filename)
-prediction = predict_with_model(model, user_input)
-st.write('The prediction output is: ', prediction)
+  inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
+  model_filename = 'trained_model.pkl'
+  model = load_model(model_filename)
+  prediction = predict_with_model(model, user_input)
+  st.write('The prediction output is: ', prediction)
 
 if __name__ == "__main__":
 main()
