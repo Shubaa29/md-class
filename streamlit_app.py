@@ -80,25 +80,25 @@ def main():
   band_like_infiltrate = st.slider('band like infiltrate', min_value = 0, max_value = 3, value = 0)
 
   age = st.slider('age', min_value = 0, max_value = 75, value = 40)
+  haha = st.selectbox('Gender',('Male','Female'))
 
-#Input data for program
-# Input Data for Program
+  # Input Data for Program
 
   user_input = [erythema, scaling, definite_borders, itching, koebner_phenomenon, polygonal_papules, follicular_papules, oral_mucosal_involvement,
 
-  knee_and_elbow_involvement, scalp_involvement, family_history, melanin_incontinence, eosinophils_infiltrate, PNL_infiltrate,
-  
-  fibrosis_papillary_dermis, exocytosis, acanthosis, hyperkeratosis, parakeratosis, clubbing_rete_ridges, elongation_rete_ridges,
+                knee_and_elbow_involvement, scalp_involvement, family_history, melanin_incontinence, eosinophils_infiltrate, PNL_infiltrate,
 
-  thinning_suprapapillary_epidermis, spongiform_pustule, munro_microabcess, focal_hypergranulosis, disappearance_granular_layer,
+                fibrosis_papillary_dermis, exocytosis, acanthosis, hyperkeratosis, parakeratosis, clubbing_rete_ridges, elongation_rete_ridges,
 
-  vacuolisation_damage_basal_layer, spongiosis, saw_tooth_appearance_retes, follicular_horn_plug, perifollicular_parakeratosis,
+               thinning_suprapapillary_epidermis, spongiform_pustule, munro_microabcess, focal_hypergranulosis, disappearance_granular_layer,
 
-  inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
+               vacuolisation_damage_basal_layer, spongiosis, saw_tooth_appearance_retes, follicular_horn_plug, perifollicular_parakeratosis,
+
+               inflammatory_mononuclear_infiltrate, band_like_infiltrate, age]
   model_filename = 'trained_model.pkl'
   model = load_model(model_filename)
   prediction = predict_with_model(model, user_input)
   st.write('The prediction output is: ', prediction)
 
 if __name__ == "__main__":
-main()
+  main()
