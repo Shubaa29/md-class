@@ -11,7 +11,7 @@ def predict_wtih_model(model,user_input):
   return prediction[0]
 
 def main():
-  st.title('🎈 Dermatology Machine Learning')
+  st.title('Dermatology Machine Learning')
   st.info('This App Using Machine Learning!')
 
   #input data by user
