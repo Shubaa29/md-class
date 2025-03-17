@@ -6,4 +6,4 @@ def main():
   st.write('This App Using Machine Learning!')
 
 if__name__ == "__main__":
-main()
+  main()
